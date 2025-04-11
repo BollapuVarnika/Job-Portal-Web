@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Portal - Registration</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='form_style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Registration Form</h1>
+            </div>
+            <form action="/search_job" method="POST">
+                <label for="Role">Title:</label>
+                <input type="text" id="Role" name="title" placeholder="Enter Tile / None" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter Location" required>
+
+                <label for="salary">Salary:</label>
+                <input type="tel" id="salary" name="salary" placeholder="Enter Salary" required>
+
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </body>
+</html>

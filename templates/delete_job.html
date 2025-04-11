@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Portal - Search</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='form_style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Registration Form</h1>
+            </div>
+            <form action="/delete_job" method="POST">
+        
+                <label for="title">Enter Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter Title" required>
+
+                <button type="submit" class="btn">Delete</button>
+            </form>
+        </div>
+    </body>
+</html>

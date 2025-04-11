@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Portal - Search</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='form_style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Registration Form</h1>
+            </div>
+            <form action="/update_job" method="POST">
+
+                <label for="title">Enter Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter Title">
+
+                <label for="location">Update Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter Location or None">
+
+                <label for="description">Update Description:</label>
+                <input type="text" id="description" name="description" placeholder="Enter Description or None">
+
+                <label for="title">Update Salary:</label>
+                <input type="text" id="title" name="title" placeholder="Enter Salary or None">
+
+                <button type="submit" class="btn">UPDATE</button>
+            </form>
+        </div>
+    </body>
+</html>

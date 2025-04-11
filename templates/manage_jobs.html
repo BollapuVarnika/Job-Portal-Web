@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Portol</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Job Portal System</h1>
+        </div>
+        <div class="container">
+            <a href="posting">
+                <button class="post_btn"><b>Post Jobs</b></button>
+            </a>
+            <a href="/jobs">
+                <button class="post_btn"><b>Update Jobs</b></button>
+            </a>
+            <a href="/delete_job">
+                <button class="post_btn"><b>Delete Jobs</b></button>
+            </a>
+
+            <a href="/manage_application">
+                <button class="post_btn"><b>Job Applications</b></button>
+            </a>
+        </div>
+        <div class="footer">
+            <p><b>Contact Us: jobportal@system.in | +986543210</b></p>
+        </div>
+    </body>
+</html>

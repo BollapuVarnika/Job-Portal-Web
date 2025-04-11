@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Portal - Registration</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='form_style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Registration Form</h1>
+            </div>
+            <form action="/register" method="POST">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+
+                <label for="phone">Age:</label>
+                <input type="tel" id="age" name="age" placeholder="Enter Age" required>
+
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </body>
+</html>

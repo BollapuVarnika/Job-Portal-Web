@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Portol</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body class="list">
+        <div class="header">
+            <h1>Avaliable Jobs</h1>
+        </div>
+        <div>
+            <table border="1">
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Location</th>
+                    <th>Salary</th>
+                </tr>
+                {% for job in jobs %}
+                <tr>
+                    <td>{{ job[0] }}</td>
+                    <td>{{ job[1] }}</td>
+                    <td>{{ job[2] }}</td>
+                    <td>{{ job[3] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div class="footer">
+            <p><b>Contact Us: jobportal@system.in | +986543210</b></p>
+        </div>
+    </body>
+</html>

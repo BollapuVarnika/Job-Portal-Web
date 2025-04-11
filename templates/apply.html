@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Portal - Registration</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='form_style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Registration Form</h1>
+            </div>
+            <h2>Apply for Job</h2>
+            <form action="apply" method="POST">
+                <label for="title">Title:</label>
+                <input type="text" name="title" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" required>
+                
+                <label for="cover_letter">Cover Letter:</label>
+                <textarea name="cover_letter" required></textarea>
+        
+                <button type="submit">Submit Application</button>
+            </form>
+
+        </div>
+    </body>
+</html>

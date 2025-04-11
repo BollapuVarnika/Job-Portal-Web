@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Portol</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Job Portal System</h1>
+        </div>
+        <div class="container">
+            <!--Job seekers Section-->
+            <div class="seeker">
+                <img src="https://cdn-icons-png.flaticon.com/512/2920/2920323.png" alt="Job Seeker">
+                <h2>Job Seekers</h2>
+                <p><b>Register to search for jobs and apply easily.</b></p>
+                <a href="register">
+                    <button class="register_btn"><b>Register</b></button>
+                </a>
+                <a href="search">
+                    <button class="search_btn"><b>Search Jobs</b></button>
+                </a>
+                <a href="apply_job">
+                    <button class="apply_btn"><b>Apply Now</b></button>
+                </a>
+            </div>
+
+            <!-- Employer Section -->
+            <div class="employee">
+                <img src="https://cdn-icons-png.flaticon.com/512/1995/1995545.png" alt="Employer">
+                <h2>Employers</h2>
+                <p><b>Post new jobs and manage your job listings.</b></p>
+                <a href="posting">
+                    <button class="post_btn"><b>Post Jobs</b></button>
+                </a>
+                <a href="/listing">
+                    <button class="listing_btn"><b>Manage Listings</b></button>
+                </a>
+                
+            </div>
+
+            <!-- Admin Section -->
+            <div class="admin">
+                <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Admin">
+                <h2>Admins</h2>
+                <p><b>Manage users and job postings efficiently.</b></p>
+                <a href="/manage_user">
+                    <button class="user_btn"><b>Manage Users</b></button>
+                </a>
+                <a href="/manage_jobs">
+                    <button class="manage_btn"><b>Manage Jobs</b></button>
+                </a>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <p><b>Contact Us: jobportal@system.in | +986543210</b></p>
+        </div>
+    </body>
+</html>
