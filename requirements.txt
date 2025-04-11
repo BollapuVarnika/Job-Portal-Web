@@ -1,0 +1,2 @@
+Flask
+Flask-RESTful==0.3.10
